@@ -1,4 +1,5 @@
 # heroku-sudoku
+[Functioning Heroku](https://knight-hello-heroku.herokuapp.com/)
 
 **Welcome to the Hello-Heroku App program and here**
 
@@ -20,6 +21,9 @@ Now we have to check and see if we have the neccissary programs installed
    - Type `node -v` to check if installed
       - if not close and open VScode again
    - Check to see if npm is installed `npm -v`
+- You will need to initialize it with `$:` `npm init -y`
+- We will also need `express.js`
+   - Install *express.js* `$:` `install i express --save`
 - Now we will open index file
   - Either click on the file named `index.js`
   - or type `index.js`
@@ -31,4 +35,33 @@ Now we have to check and see if we have the neccissary programs installed
     },
 ```
 - If the code is missing you will need to add it
-- Now we would open the heroku app that I made [Hank Scorpio](https://knight-hello-heroku.herokuapp.com/)
+- Then you will need to save it all
+- Now we would open the heroku app that I made [Hank Scorpio](https://knight-hello-heroku.herokuapp.com/) to check and see if everything functions
+
+## Creating - Tutorial
+In this section we will go about creating your own version of a heroku app
+You will go through the same steps opening *vsCode* and opening the terminal (GitBASH)
+We also need to follow the same steps to checking the installs
+Now we have to check and see if we have the neccissary programs installed
+- We will check to see if Node.js is install by typing `npm -v` into the terminal
+   - If not download [Node.js](https://nodejs.org/en/)
+      - Accept all defaults and install
+   - Type `node -v` to check if installed
+      - if not close and open VScode again
+   - Check to see if npm is installed `npm -v`
+
+- [ ] The folder will be put on your desktop; `$:` `cd desktop`
+- [ ] Create the root folder; `$:` `mkdir you-choo-choo-choose-me`
+- [ ] Go into the folder; `$:` `cd you-choo-choo-choose-me`
+- [ ] Open the folder; `$:` `open you-choo-choo-choose-me`
+- [ ] You will need to initialize it with `$:` `npm init -y`
+- [ ] Install *express.js* `$:` `install i express --save`
+- [ ] Create a new file `$:` `touch index.js`
+- [ ] Open *index.js* in VScode
+- [ ] Open *package.json* and edit it to look like this
+```json
+ "scripts": {
+         "test": "echo \"Error: no test specified\" && exit 1",
+         "start": "node index.js"
+    },
+```
