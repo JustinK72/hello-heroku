@@ -54,14 +54,52 @@ Now we have to check and see if we have the neccissary programs installed
 - [ ] Create the root folder; `$:` `mkdir you-choo-choo-choose-me`
 - [ ] Go into the folder; `$:` `cd you-choo-choo-choose-me`
 - [ ] Open the folder; `$:` `open you-choo-choo-choose-me`
-- [ ] You will need to initialize it with `$:` `npm init -y`
-- [ ] Install *express.js* `$:` `install i express --save`
-- [ ] Create a new file `$:` `touch index.js`
-- [ ] Open *index.js* in VScode
-- [ ] Open *package.json* and edit it to look like this
+- [ ] You will need to initialize it with; `$:` `npm init -y`
+- [ ] Install *express.js*; `$:` `install i express --save`
+- [ ] Create a new file; `$:` `touch index.js`
+- [ ] Open *index.js* in VScode and place this code into it;
+```
+console.log('hello node');
+
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+    res.send('<h3>have you ever seen a man say goodbye to a pair of shoes before?</h3> <a href = "https://github.com/JustinK72/hello-heroku"> thrillhouse </a> ') //This will be replaced with your own link to tie back into your github
+});
+
+app.get('/about', function (req, res) {
+    res.sendFile('/README.md', { root: _dirname });
+});
+
+app.listen(process.env.PORT || 3000)
+```
+- [ ] Open *package.json* and edit it to match this;
 ```json
  "scripts": {
          "test": "echo \"Error: no test specified\" && exit 1",
          "start": "node index.js"
     },
 ```
+**Make sure to save frequently otherwise you will lose all of your progress**
+- [ ] Create a *.gitignore* file; `$:` `echo 'node_modules' >> .gitignore`
+- [ ] Initialize local git repo; `$:` `git init`
+- [ ] Go to [GitHub](https://github.com/)
+   - [ ] sign in (must have active account)
+      - [ ] if you do not have one make one
+   - [ ] create a new repo name it something distinct that you would know
+   - [ ] do **NOT** check any defaults just name it and create it
+- [ ] Connect our **remote repo** to the local repo
+```
+echo "# hello-heroku-or-whatever-you-named-it" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/{YOUR-USER-NAME}/{YOUR-REPO-NAME}.git
+git push -u origin main
+```
+- [ ] Now we need to add it all to it; `$:` `git add .`
+- [ ] Go to Heroku and login [Heroku](https://www.heroku.com)
+   - [ ] just like gitHub you need a active account
+- [ ] 
