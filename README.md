@@ -102,4 +102,10 @@ git push -u origin main
 - [ ] Now we need to add it all to it; `$:` `git add .`
 - [ ] Go to Heroku and login [Heroku](https://www.heroku.com)
    - [ ] just like gitHub you need a active account
-- [ ] 
+- [ ] Then you will click on *create a new app*
+- [ ] You **MUST** make a distinct name that is not taken for the name and create the app
+- [ ] Under *Deploy* you will choose Github as the deploymen method
+- [ ] Search your repository name and choose it
+- [ ] Make sure to click on *Enable Automatic Deploys*
+- [ ] Deploy the branch manually
+- [ ] **CONGRATS** you now have a working heroku application
